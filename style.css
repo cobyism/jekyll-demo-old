@@ -1,0 +1,23 @@
+body {
+  font-family: "Comic Sans MS";
+  background: #f4f4f4;
+}
+
+header,
+footer,
+section {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+section {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+header,
+footer {
+  text-align: center;
+}

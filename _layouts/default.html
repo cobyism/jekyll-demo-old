@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}style.css">
 </head>
 <body>
   {% include header.html %}
-  {{ content }}
+  <section>
+    {{ content }}
+  </section>
   {% include footer.html %}
 </body>
 </html>
