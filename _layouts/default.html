@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Jekyll Blog</title>
+  <title>{{ site.title }}</title>
 </head>
 <body>
-  <h1>My Jekyll Blog</h1>
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.byline }}</p>
   {{ content }}
 </body>
 </html>
