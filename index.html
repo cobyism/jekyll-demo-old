@@ -1,20 +1,13 @@
 ---
-foo: bar
+layout: default
 ---
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Jekyll Blog</title>
-</head>
-<body>
-  <h1>My Jekyll Blog</h1>
-  <p>Greetings!</p>
-  <ul>
-    {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</body>
-</html>
+<p>Here are some things I have written:</p>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      — {{ post.date | date_to_string }}
+    </li>
+  {% endfor %}
+</ul>
